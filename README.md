@@ -1,4 +1,4 @@
-# LatticeTakeHomeChallenge
+# Lattice Take Home Challenge
 My submission for the Lattice Take Home Challenge.
 
 In the project directory, you can run:
