@@ -6,11 +6,7 @@ import Switch from "react-switch";
 import './styles/App.css';
 
 /*
-  [App] is the entrypoint of the web application. It either shows the host
-  screen, or the company screen.
-
-  Screens it Connects to:
-    - [Events] (when a host clicks on Events)
+  [App] is the entrypoint of the web application. It shows the movies screen.
 */
 
 class App extends Component {

@@ -122,14 +122,13 @@ input {
   color: white;
 }
 
-.eventCardBoxShadow {
+.movieCardBoxShadow {
   background-color: #f9f8f4;
 }
 
 .movieArea {
   padding-top: 3em;
 }
-
 
 input[type=text] {
   width: 200%;

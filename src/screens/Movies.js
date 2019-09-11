@@ -108,7 +108,6 @@ class Movies extends React.Component {
   renderDisplayMovie() {
     var currentMovie = this.state.currentMovie;
     if(Object.keys(currentMovie).length == 0) return;
-    console.log(currentMovie);
     return (
       <div>
         <div
@@ -143,7 +142,7 @@ class Movies extends React.Component {
           <div>
             <input
               style={{
-                background: `url(${searchIcon}) no-repeat scroll 9px 8px`,
+                background: `url(${searchIcon}) no-repeat scroll 9px 9px`,
                 backgroundSize: '18px 18px'}}
               className="searchArea"
               placeholder={'Search for movies'}
@@ -171,27 +170,27 @@ class Movies extends React.Component {
   }
 
   render() {
-  if(this.state.isLoading) {
+    if(this.state.isLoading) {
+      return (
+        <div style={{"textAlign": "center","paddingTop": "7em"}}>
+          <ClipLoader
+            sizeUnit={"px"}
+            size={150}
+            color={'white'}
+          />
+        </div>
+      )
+    }
     return (
-      <div style={{"textAlign": "center","paddingTop": "7em"}}>
-        <ClipLoader
-          sizeUnit={"px"}
-          size={150}
-          color={'black'}
-        />
+      <div>
+        {this.state.isDisplayMovie ? (
+            this.renderDisplayMovie()
+        ) : (
+            this.renderMovies()
+        )}
       </div>
     )
   }
-  return (
-    <div>
-      {this.state.isDisplayMovie ? (
-          this.renderDisplayMovie()
-      ) : (
-          this.renderMovies()
-      )}
-    </div>
-  )
-}
 }
 
 const styles = {

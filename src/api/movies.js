@@ -1,5 +1,4 @@
 "use strict";
-exports.__esModule = true;
 var host = 'https://api.themoviedb.org/3';
 const API_KEY = "93657592650671874f3b3b1ac906b78f"
 

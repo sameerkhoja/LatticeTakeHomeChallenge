@@ -36,7 +36,7 @@ class Movie extends React.Component {
                 <Col sm={{ span: 8 }}>
                   <h1 className="originalTitle">{this.props.originalTitle} <span className="releaseYear">({this.props.releaseYear})</span></h1>
                   <div style={styles.nameTitleAffiliationArea}>
-                    <h5 className="subtitle">User Rating</h5>
+                    <h5 className="subtitle">Audience Rating</h5>
                     <h5 className="subtext">{this.props.userRating}%</h5>
                     <h5 className="subtitle">Synopsis</h5>
                     <h5 className="subtext">{this.props.overview}</h5>

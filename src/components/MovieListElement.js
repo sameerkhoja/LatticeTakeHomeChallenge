@@ -1,17 +1,18 @@
 import React from 'react'
 import * as movieRequests from '../api/movies.js';
 /*
-  [MovieListElement] returns one host event card, to be
-  rendered in the [Events] screen.
+  [MovieListElement] returns one host movie card, to be
+  rendered in the [Movies] screen.
 */
 
 export default class MovieListElement extends React.Component {
+
 
   render() {
     return (
       <div
         style={styles.container}
-        className="fadeOnHover eventCardBoxShadow"
+        className="fadeOnHover movieCardBoxShadow"
         >
         <div
           style={{...styles.moviePictureArea,
